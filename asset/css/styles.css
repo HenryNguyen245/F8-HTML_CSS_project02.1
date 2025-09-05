@@ -189,7 +189,7 @@ a {
   object-fit: cover;
 }
 /* hero-media course  */
-.hero-media .course {
+.hero-media .card-course {
   position: absolute;
   top: 26.78%;
   left: -6.3%;
@@ -204,11 +204,11 @@ a {
   box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
 }
 
-.hero-media .course .book {
+.hero-media .card-course .book {
   position: relative;
 }
 
-.hero-media .course .book .line {
+.hero-media .card-course .book .line {
   position: absolute;
   left: 4px;
   bottom: 8px;
@@ -320,7 +320,7 @@ a {
 .features .body .intro {
   width: 57.62%;
 }
-.features .body .heading {
+.features .intro .heading {
   padding: 18px 0;
 }
 
@@ -353,4 +353,74 @@ a {
 
 .features .features-columns .heading.lv4 {
   margin-top: 8px;
+}
+
+/* ---------------Course--------------- */
+.courses {
+  padding: 51px 0;
+}
+/* .courses .course-column {
+  background: red;
+} */
+
+/* ---------------Course intro--------------- */
+.courses .intro {
+  padding-bottom: 79px;
+}
+
+.courses .heading.lv2 {
+  padding: 18px 0 19px;
+}
+
+/* ---------------Course column--------------- */
+
+.courses .course-column {
+  display: flex;
+  gap: 47px;
+  flex-shrink: 0;
+}
+
+.courses .course-column .column {
+  width: 33.33%;
+}
+
+.courses .course-column .column img {
+  width: 100%;
+  height: 393px;
+  object-fit: cover;
+}
+
+.courses .card {
+  width: 90.53%;
+  padding: 18px 25px 37px;
+  margin: 0 auto;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+}
+
+.courses .card .heading {
+  margin-bottom: 16px;
+}
+
+.courses .card .price {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #0d1111;
+}
+.courses .card .desc.price {
+  margin-bottom: 6px;
+}
+
+.courses .card .desc {
+  font-size: 1.4rem;
+}
+
+.courses .card .duration-class {
+  margin-top: 18px;
+  display: flex;
+}
+
+.courses .card .duration-class .desc {
+  font-size: 1.4rem;
 }
