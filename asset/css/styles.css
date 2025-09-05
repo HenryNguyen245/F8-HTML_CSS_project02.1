@@ -330,14 +330,27 @@ a {
   margin-top: 80px;
   display: flex;
 }
-
-.features .features-columns .column:nth-of-type(1) {
-  width: 168px;
-  margin-right: 20.4%;
+.features .features-columns .column {
+  flex-shrink: 0;
 }
 
+.features .features-columns .column.column-01 {
+  width: 16.41%;
+  margin-right: 20.4%;
+}
+.features .features-columns .column.column-02 {
+  width: 21.78%;
+  margin-right: 19.53%;
+}
+.features .features-columns .column.column-03 {
+  width: 21.78%;
+}
 .features .features-columns .desc {
   font-size: 1.6rem;
   color: #9da6a5;
   line-height: 1.69; /* 168.75% */
+}
+
+.features .features-columns .heading.lv4 {
+  margin-top: 8px;
 }
