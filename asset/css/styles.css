@@ -1,0 +1,32 @@
+:root {
+  --primary-color: #1ebfc1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ---------------Common--------------- */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "poppins", "Sen", sans-serif;
+}
+
+.main-content {
+  width: 1170px;
+  max-width: cal(100% - 4.8rem);
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
