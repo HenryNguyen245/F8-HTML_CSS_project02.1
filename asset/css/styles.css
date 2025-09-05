@@ -18,7 +18,8 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: "poppins", "Sen", sans-serif;
+  font-family: "poppins", sans-serif;
+  height: 10000px;
 }
 
 .main-content {
@@ -30,3 +31,52 @@ body {
 a {
   text-decoration: none;
 }
+
+/* ---------------Header--------------- */
+.header {
+  margin-top: 64px;
+}
+
+.header.fixed {
+  background: #fff;
+  /* padding-top: 26px; */
+  position: sticky;
+  top: 28px;
+  z-index: 1;
+}
+
+.header .body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .navbar ul {
+  display: flex;
+  gap: 39px;
+}
+
+.header .navbar a {
+  color: #2f3a3b;
+}
+
+.header .action a {
+  color: #494949;
+}
+
+.header .action a:hover {
+  color: #1ebfc1;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+
+.header .action a.sign-in-btn {
+  padding: 12px 24px 12px 12px;
+}
+
+.header .action a.sign-up-btn {
+  padding: 12px 12px 12px 24px;
+}
+
+/* ---------------Hero--------------- */
