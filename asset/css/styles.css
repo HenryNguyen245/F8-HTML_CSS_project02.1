@@ -49,6 +49,34 @@ a {
   text-align: center;
 }
 
+.desc {
+  font-size: 1.8rem;
+  color: #767e7e;
+}
+
+.title {
+  color: #767e7e;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.heading.lv2 {
+  color: #0d1111;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+}
+
+.heading.lv3 {
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.heading.lv4 {
+  color: #0d1111;
+  font-size: 2rem;
+  font-weight: 600;
+}
 /* ---------------Header--------------- */
 .header {
   margin-top: 64px;
@@ -127,8 +155,6 @@ a {
 .hero .hero-content .desc {
   margin-top: 46px;
   margin-right: 84px;
-  color: #9da6a5;
-  font-size: 1.8rem;
   line-height: 1.78; /* 177.778% */
 }
 
@@ -188,7 +214,7 @@ a {
   bottom: 8px;
 }
 
-.hero-media h4 {
+.hero-media h5 {
   color: #0d1111;
   font-size: 1rem;
   font-weight: 500;
@@ -207,7 +233,7 @@ a {
   box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
 }
 
-.hero-media .schedules h4 {
+.hero-media .schedules h5 {
   text-align: center;
   padding: 16px 0;
 }
@@ -249,7 +275,7 @@ a {
   box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
 }
 
-.hero-media .students h4 {
+.hero-media .students h5 {
   margin-top: 17px;
   margin-left: 35px;
 }
@@ -277,4 +303,41 @@ a {
 
 .hero-media .students .avatar:first-child {
   margin-left: 35px;
+}
+
+/* ---------------Features--------------- */
+
+.features {
+  padding: 79px 0;
+  margin-top: 51px;
+}
+
+.features .body {
+  width: 87.52%;
+}
+
+/* ---------------Features intro--------------- */
+.features .body .intro {
+  width: 57.62%;
+}
+.features .body .heading {
+  padding: 18px 0;
+}
+
+/* ---------------Features column--------------- */
+
+.features .features-columns {
+  margin-top: 80px;
+  display: flex;
+}
+
+.features .features-columns .column:nth-of-type(1) {
+  width: 168px;
+  margin-right: 20.4%;
+}
+
+.features .features-columns .desc {
+  font-size: 1.6rem;
+  color: #9da6a5;
+  line-height: 1.69; /* 168.75% */
 }
