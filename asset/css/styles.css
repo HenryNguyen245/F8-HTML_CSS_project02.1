@@ -31,6 +31,23 @@ body {
 a {
   text-decoration: none;
 }
+.btn {
+  display: inline-block;
+  /*tự ước lượng từ 12-16px */
+  padding: 0 16px;
+  /* tạo chiều cao cho btn */
+  line-height: 68px;
+  /* kiểm tra độ rộng của nút bấm nhỏ nhất trong thiết kế */
+  min-width: 186px;
+  /* height: 64px; */
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--primary-color);
+  color: #fff;
+  text-align: center;
+}
 
 /* ---------------Header--------------- */
 .header {
@@ -80,3 +97,184 @@ a {
 }
 
 /* ---------------Hero--------------- */
+.hero {
+  margin-top: 62px;
+  padding-bottom: 79px;
+}
+
+.hero .body {
+  display: flex;
+  align-items: center;
+}
+/* ---------------hero-content--------------- */
+.hero .hero-content {
+  width: 39%;
+}
+
+.hero .hero-content .slogan {
+  color: #767e7e;
+  font-size: 1.4rem;
+}
+
+.hero .hero-content .heading {
+  margin-top: 18px;
+  color: #0d1111;
+  font-size: 6.2rem;
+  font-weight: 700;
+  line-height: 1.16; /* 116.129% */
+}
+
+.hero .hero-content .desc {
+  margin-top: 46px;
+  margin-right: 84px;
+  color: #9da6a5;
+  font-size: 1.8rem;
+  line-height: 1.78; /* 177.778% */
+}
+
+.hero .hero-content .action {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  margin-top: 52px;
+}
+.hero .hero-content .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 22px 50px 0 rgba(0, 0, 0, 0.05);
+}
+/* ---------------hero-media--------------- */
+
+.hero .hero-media {
+  position: relative;
+  width: 49%;
+  margin-left: auto;
+  background-color: #1ebfc1;
+}
+
+.hero .hero-media .image {
+  width: 100%;
+  height: 631px;
+  object-fit: cover;
+}
+/* hero-media course  */
+.hero-media .course {
+  position: absolute;
+  top: 26.78%;
+  left: -6.3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 157px;
+  height: 75px;
+  border-radius: 18px;
+  background: #fefefd;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-media .course .book {
+  position: relative;
+}
+
+.hero-media .course .book .line {
+  position: absolute;
+  left: 4px;
+  bottom: 8px;
+}
+
+.hero-media h4 {
+  color: #0d1111;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* hero-media schedule  */
+.hero-media .schedules {
+  position: absolute;
+  bottom: 7.3%;
+  left: -10.3%;
+
+  width: 124px;
+  height: 132px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 10px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-media .schedules h4 {
+  text-align: center;
+  padding: 16px 0;
+}
+.hero-media .schedules .bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.hero-media .schedules .bar {
+  width: 60%;
+  height: 6px;
+  border-radius: 3px;
+  background: #edf1f5;
+}
+.hero-media .schedules .bar .fill {
+  height: 100%;
+  background: #fb9899;
+  border-radius: 3px;
+}
+
+.hero-media .schedules .bar.gray {
+  width: 21%;
+  background: #edf1f5;
+  border-radius: 3px;
+}
+
+/* hero-media student  */
+.hero-media .students {
+  position: absolute;
+  bottom: 6.5%;
+  right: 7.13%;
+
+  width: 36%;
+  height: 90px;
+  border-radius: 24px;
+  background: #fefefd;
+  box-shadow: 0 12px 80px 0 rgba(0, 0, 0, 0.05);
+}
+
+.hero-media .students h4 {
+  margin-top: 17px;
+  margin-left: 35px;
+}
+
+.hero-media .students .avatar-block {
+  margin-top: 8px;
+  display: flex;
+}
+
+.hero-media .students .avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33px;
+  height: 33px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: -7px;
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: #1ebfc1;
+}
+
+.hero-media .students .avatar:first-child {
+  margin-left: 35px;
+}
