@@ -49,6 +49,18 @@ a {
   text-align: center;
 }
 
+.btn:hover {
+  opacity: 0.8;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 4);
+  line-clamp: var(--line-clamp, 4);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
 .desc {
   font-size: 1.8rem;
   color: #767e7e;
@@ -69,7 +81,7 @@ a {
 
 .heading.lv3 {
   color: #0d1111;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 700;
 }
 .heading.lv4 {
@@ -364,9 +376,6 @@ a {
 } */
 
 /* ---------------Course intro--------------- */
-.courses .intro {
-  padding-bottom: 79px;
-}
 
 .courses .heading.lv2 {
   padding: 18px 0 19px;
@@ -375,12 +384,14 @@ a {
 /* ---------------Course column--------------- */
 
 .courses .course-column {
+  padding: 79px 0;
   display: flex;
   gap: 47px;
   flex-shrink: 0;
 }
 
-.courses .course-column .column {
+.courses .column {
+  position: relative;
   width: 33.33%;
 }
 
@@ -388,22 +399,32 @@ a {
   width: 100%;
   height: 393px;
   object-fit: cover;
+  border-radius: 8px;
+  background: #d0efed;
 }
 
-.courses .card {
+.courses .course-column .column:hover img {
+  opacity: 0.35;
+}
+
+.courses .course-column .card {
+  position: absolute;
+  bottom: -100px;
   width: 90.53%;
-  padding: 18px 25px 37px;
-  margin: 0 auto;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 18px 25px 29px;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0 16px 90px 0 rgba(0, 0, 0, 0.05);
+  z-index: 2;
 }
 
 .courses .card .heading {
   margin-bottom: 16px;
 }
 
-.courses .card .price {
+.courses .card strong.price {
   font-size: 2.2rem;
   font-weight: 700;
   color: #0d1111;
@@ -419,8 +440,163 @@ a {
 .courses .card .duration-class {
   margin-top: 18px;
   display: flex;
+  align-items: center;
+
+  gap: 20px;
 }
 
 .courses .card .duration-class .desc {
+  position: relative;
+  text-align: center;
+  margin-left: 20px;
   font-size: 1.4rem;
+}
+
+/* làm 2 dấu chấm màu xanh */
+
+.courses .duration-class p.desc::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: -20px;
+  transform: translateY(-50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #1ebfc1;
+}
+
+/* ---------------Stats--------------- */
+.stast {
+  padding: 79px 0;
+  margin-top: 184px;
+}
+.stast .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+}
+
+.stast .stast-column .number {
+  color: #0d1111;
+  text-align: center;
+  font-size: 6.2rem;
+  font-weight: 700;
+}
+
+.stast .stast-column .desc {
+  font-size: 1.8rem;
+  margin-top: 11px;
+}
+
+/* ---------------feedback--------------- */
+
+.feedback {
+  padding: 79px;
+  margin-top: 106px;
+}
+
+.feedback .body {
+  display: flex;
+  align-items: center;
+}
+
+/* -----------------feedback-picture----------------- */
+.feedback .feedback-comment {
+  width: 35.8%;
+  margin-right: 72px;
+  /* background-color: #0d1111; */
+}
+
+.feedback-comment blockquote {
+  margin-top: 27px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  line-height: 1.5; /* 150% */
+}
+
+.feedback-comment blockquote footer {
+  margin: 33px 0 52px;
+  color: #767e7e;
+  font-size: 1.6rem;
+}
+
+.feedback-comment blockquote footer strong {
+  color: #070707;
+  font-weight: 500;
+}
+.feedback-comment .carousel-navigation {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.feedback-comment .carousel-navigation .previous,
+.feedback-comment .carousel-navigation .next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #2ac9bf;
+}
+.feedback-comment .carousel-navigation a:hover {
+  opacity: 0.85;
+}
+/* -----------------feedback-picture----------------- */
+.feedback-picture {
+  position: relative;
+  width: calc(68.2% - 72px);
+  height: 481px;
+}
+.feedback-picture .image {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-picture .image01 {
+  position: absolute;
+  top: 107px;
+  right: 171px;
+  width: 235px;
+  height: 235px;
+}
+
+.feedback-picture .image02 {
+  position: absolute;
+  top: 0px;
+  left: 144px;
+  width: 92px;
+  height: 92px;
+}
+
+.feedback-picture .image03 {
+  position: absolute;
+  top: 19px;
+  right: 0px;
+  width: 110px;
+  height: 110px;
+}
+
+.feedback-picture .image04 {
+  position: absolute;
+  bottom: 29px;
+  right: 32px;
+}
+
+.feedback-picture .image05 {
+  position: absolute;
+  bottom: 145px;
+  left: 0px;
+}
+
+.feedback-picture .image06 {
+  position: absolute;
+  bottom: 0px;
+  left: 212px;
 }
