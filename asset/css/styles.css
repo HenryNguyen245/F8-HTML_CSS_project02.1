@@ -600,3 +600,29 @@ a {
   bottom: 0px;
   left: 212px;
 }
+
+/* -----------------admit----------------- */
+
+.admit {
+  margin-top: 51px;
+  padding: 76px 0 88px;
+  background: #def6f5;
+}
+
+.admit .body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.admit .desc {
+  margin-top: 18px;
+}
+
+.admit .btn-admit {
+  width: 186px;
+  height: 68px;
+  border-radius: 14px;
+  margin-right: 154px;
+}
+
+/* -----------------footer----------------- */
