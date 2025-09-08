@@ -89,6 +89,12 @@ a {
   font-size: 2rem;
   font-weight: 600;
 }
+
+.heading.lv5 {
+  color: #2e2e2e;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
 /* ---------------Header--------------- */
 .header {
   margin-top: 64px;
@@ -626,3 +632,40 @@ a {
 }
 
 /* -----------------footer----------------- */
+.footer {
+  padding: 50px 0;
+  margin-top: 80px;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .column ul {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.footer .column li a {
+  color: #535353;
+  font-size: 1.6rem;
+  gap: 9px;
+}
+
+.footer .column .heading {
+  margin-bottom: 26px;
+}
+
+.footer .column .social-link {
+  display: flex;
+  align-items: center;
+}
+
+.footer .copyright {
+  margin-top: 91px;
+  text-align: center;
+  color: #b0b5b4;
+  font-size: 1.8rem;
+}
