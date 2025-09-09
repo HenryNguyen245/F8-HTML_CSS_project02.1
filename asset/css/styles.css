@@ -19,7 +19,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "poppins", sans-serif;
-  height: 10000px;
 }
 
 .main-content {
@@ -97,15 +96,16 @@ a {
 }
 /* ---------------Header--------------- */
 .header {
-  margin-top: 64px;
+  margin-top: 32px;
 }
 
 .header.fixed {
   background: #fff;
-  /* padding-top: 26px; */
+  padding: 20px 0;
   position: sticky;
-  top: 28px;
+  top: 0;
   z-index: 1;
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08); */
 }
 
 .header .body {
@@ -135,16 +135,16 @@ a {
 }
 
 .header .action a.sign-in-btn {
-  padding: 12px 24px 12px 12px;
+  padding: 12px;
 }
 
 .header .action a.sign-up-btn {
-  padding: 12px 12px 12px 24px;
+  padding: 12px;
 }
 
 /* ---------------Hero--------------- */
 .hero {
-  margin-top: 62px;
+  padding-top: 30px;
   padding-bottom: 79px;
 }
 
@@ -659,7 +659,7 @@ a {
 
 .footer .column li a:hover {
   text-decoration: underline;
-  color: #a7f2ef;
+  /* color: #a7f2ef; */
 }
 
 .footer .column .heading {
